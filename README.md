@@ -1,5 +1,6 @@
 # umi-app
 My studies using UmiJS with the book Enterprise-React-Development-with-UmiJs.
+All developed code from the book with litlle changes.
 
 ### Software and Hardware List
 
