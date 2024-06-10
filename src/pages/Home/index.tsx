@@ -23,10 +23,10 @@ export default function IndexPage() {
 
           <div className={styles.content}>
             <div className={styles.contentTitle}>
-              <FormattedMessage id="greetings.hello" /> John Doe,{' '}
+              <FormattedMessage id="greetings.hello" /> Daniel Radd,{' '}
               <FormattedMessage id="greetings.welcome" />.
             </div>
-            <div>Inside Sales | Umi Group</div>
+            <div>Inside Sales | DraddX</div>
           </div>
         </div>
       }
