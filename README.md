@@ -1,27 +1,15 @@
-# umi-app
-My studies using UmiJS with the book Enterprise-React-Development-with-UmiJs.
+# umi project
 
-### Software and Hardware List
+## Getting Started
 
-| Software required                   | OS required                        |
-| ------------------------------------| -----------------------------------|
-| Node.js v16.17.0                  | Windows, Mac OS X, and Linux (Any) |
-| Visual Studio Code v1.66.1            | Windows, Mac OS X, and Linux (Any) |
-| Yarn v1.22.22            | Windows, Mac OS X, and Linux (Any) |
+Install dependencies,
 
-## Commands 
+```bash
+$ yarn
 ```
-mkdir umi-app
 
-cd umi-app
+Start the dev server,
 
-yarn create @umijs/umi-app
-```
-#install dependences
-```
-yarn 
-```
-#start
-```
-yarn start
+```bash
+$ yarn start
 ```

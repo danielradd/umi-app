@@ -1,16 +1,46 @@
-import React from 'react';
+import { UserOutlined } from '@ant-design/icons';
+import { PageContainer } from '@ant-design/pro-layout';
+import ProTable from '@ant-design/pro-table';
+import { Avatar, Row } from 'antd';
+import { FormattedMessage } from 'umi';
 import styles from './index.less';
-import { history } from 'umi';
 
-export default function Page() {
-  const { query } = history.location;
-  const { code } = query as { code: string };
-
-  alert(`code=${code}`);
-
+export default function IndexPage() {
   return (
-    <div>
-      <h1 className={styles.title}>Page /Home/index</h1>
-    </div>
+    <PageContainer
+      header={{ title: undefined }}
+      style={{ minHeight: '90vh' }}
+      content={
+        <div className={styles.pageHeaderContent}>
+          <div className={styles.avatar}>
+            <Avatar
+              alt="avatar"
+              className={styles.avatarComponent}
+              size={{ xs: 64, sm: 64, md: 64, lg: 64, xl: 80, xxl: 100 }}
+              icon={<UserOutlined />}
+            />
+          </div>
+
+          <div className={styles.content}>
+            <div className={styles.contentTitle}>
+              <FormattedMessage id="greetings.hello" /> Daniel Radd,{' '}
+              <FormattedMessage id="greetings.welcome" />.
+            </div>
+            <div>Inside Sales | DraddX</div>
+          </div>
+        </div>
+      }
+    >
+      <div style={{ width: '100%' }}>
+        <ProTable<any> // TODO: add types!!
+          headerTitle={<FormattedMessage id="home.recents" />}
+          pagination={{ pageSize: 5 }}
+          request={() => [] as any}
+          columns={[]}
+          rowKey="id"
+          search={false}
+        />
+      </div>
+    </PageContainer>
   );
 }
