@@ -3,6 +3,7 @@ import { PageContainer } from '@ant-design/pro-layout';
 import ProTable from '@ant-design/pro-table';
 import { Avatar, Row } from 'antd';
 import { FormattedMessage } from 'umi';
+import columns from '../Opportunities/columns';
 import styles from './index.less';
 
 export default function IndexPage() {
